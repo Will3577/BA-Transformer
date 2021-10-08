@@ -7,8 +7,12 @@ from tqdm import tqdm
 import matplotlib.pyplot as plt
 
 if __name__ == '__main__':
-    image_dir_path = '/raid/wl/2018_raw_data/ISIC2018_Task1-2_Training_Input'
-    mask_dir_path = '/raid/wl/2018_raw_data/ISIC2018_Task1_Training_GroundTruth'
+    # image_dir_path = '/raid/wl/2018_raw_data/ISIC2018_Task1-2_Training_Input'
+    # mask_dir_path = '/raid/wl/2018_raw_data/ISIC2018_Task1_Training_GroundTruth'
+
+    image_dir_path = '/content/train_data'
+    mask_dir_path = '/content/train_ground_truth'
+
     image_path_list = os.listdir(image_dir_path)
     mask_path_list = os.listdir(mask_dir_path)
     image_path_list.sort()
