@@ -45,16 +45,16 @@ if __name__ == '__main__':
 #             break
 
 # PH2 Dataset
-    for path in path_list:
-        label_path = os.path.join('/home/wl/ISBI/PH2', path, path + '_lesion',
-                                  path + '_lesion.bmp')
-        label = plt.imread(label_path)
-        label = label[:, :, 0]
+    # for path in path_list:
+    #     label_path = os.path.join('/home/wl/ISBI/PH2', path, path + '_lesion',
+    #                               path + '_lesion.bmp')
+    #     label = plt.imread(label_path)
+    #     label = label[:, :, 0]
 
-        dim = (512, 512)
-        label_new = cv2.resize(label, dim, interpolation=cv2.INTER_NEAREST) > 0
+    #     dim = (512, 512)
+    #     label_new = cv2.resize(label, dim, interpolation=cv2.INTER_NEAREST) > 0
 
-        label_save_path = os.path.join('/home/wl/ISBI/Test/Label',
-                                       path + '_label.npy')
+    #     label_save_path = os.path.join('/home/wl/ISBI/Test/Label',
+    #                                    path + '_label.npy')
 
-        np.save(label_save_path, label_new)
+    #     np.save(label_save_path, label_new)
